@@ -1,7 +1,11 @@
 ## next
 
-## 1.2.0
+##1.2.1.1
+ - changed to java 8
+
+## 1.2.1
  - test AUTO_CURSE_FORGE
+
 ## 1.2.0
 
 - Exposed the RCON port (25575) for remote console access. Ensure to set a strong `RCON_PASSWORD` in the configuration to use this feature.
