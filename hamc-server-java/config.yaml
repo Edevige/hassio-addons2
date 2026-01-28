@@ -1,6 +1,6 @@
 name: HAMC Server Java
 description: Host a Java Minecraft server on Home Assistant
-version: 1.2.1.7
+version: 1.2.1.8
 slug: hamc-java
 init: false
 arch:
@@ -15,9 +15,9 @@ ports_description:
   25575/tcp: RCON Port
 options:
   data_dir: "/share/minecraft-vanilla"
-  VERSION: LATEST
-  SERVER_NAME: "HAMC Java Server"
-  MOTD: "Greetings from Home Assistant"
+  VERSION: 1.21.1
+  SERVER_NAME: "Edevigecraft"
+  MOTD: "Bella raga"
   LEVEL: "World"
   MODE: survival
   DIFFICULTY: normal
@@ -32,13 +32,13 @@ options:
   SEED: ""
   VIEW_DISTANCE: 10
   ONLINE_MODE: true
-  MEMORY: 1G
+  MEMORY: 5G
   ANNOUNCE_PLAYER_ACHIEVEMENTS: true
   ENABLE_COMMAND_BLOCK: false
   FORCE_GAMEMODE: false
   MAX_BUILD_HEIGHT: 256
-  TYPE: VANILLA
-  RCON_PASSWORD: ""
+  TYPE: AUTO_CURSEFORGE
+  RCON_PASSWORD: "test"
 schema:
   VERSION: str
   TYPE: list(VANILLA|FABRIC|BUKKIT|SPIGOT|FORGE|PAPER|QUILT|MAGMA|MAGMA_MAINTAINED|KETTING|MOHIST|CATSERVER|AUTO_CURSEFORGE)
