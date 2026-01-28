@@ -1,6 +1,6 @@
 name: HAMC Server Java
 description: Host a Java Minecraft server on Home Assistant
-version: 1.2.1.9
+version: 1.2.1.10
 slug: hamc-java
 init: false
 arch:
@@ -14,7 +14,7 @@ ports_description:
   25565/tcp: Minecraft Server Port
   25575/tcp: RCON Port
 options:
-  VERSION: 1.21.1
+  VERSION: 1.20.1
   SERVER_NAME: "EdevigeCraft 2"
   MOTD: "Bella raga"
   LEVEL: "World"
@@ -36,11 +36,11 @@ options:
   ENABLE_COMMAND_BLOCK: false
   FORCE_GAMEMODE: false
   MAX_BUILD_HEIGHT: 256
-  TYPE: AUTO_CURSEFORGE
+  TYPE: MODRINTH
   RCON_PASSWORD: "test"
 schema:
   VERSION: str
-  TYPE: list(VANILLA|FABRIC|BUKKIT|SPIGOT|FORGE|PAPER|QUILT|MAGMA|MAGMA_MAINTAINED|KETTING|MOHIST|CATSERVER|AUTO_CURSEFORGE)
+  TYPE: list(VANILLA|FABRIC|BUKKIT|SPIGOT|FORGE|PAPER|QUILT|MAGMA|MODRINTH|MAGMA_MAINTAINED|KETTING|MOHIST|CATSERVER|AUTO_CURSEFORGE)
   SERVER_NAME: str
   MOTD: str
   LEVEL: str
@@ -73,5 +73,4 @@ map:
 environment:
   EULA: "TRUE"
   CF_API_KEY: '$2a$10$jcwamlZWsAk50WAZPS6.9OWBvNBR0gbY9aSNKziHC9fEX3uoOQRXO'
-  MODPACK_PLATFORM: AUTO_CURSEFORGE
-  CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/homestead-cozy/files/7509110
+  MODRINTH_MODPACK: EGs3lC8D
