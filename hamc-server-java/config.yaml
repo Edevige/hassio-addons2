@@ -1,6 +1,6 @@
 name: HAMC Server Java
 description: Host a Java Minecraft server on Home Assistant
-version: 1.2.1.11.3
+version: 1.2.1.12
 slug: hamc-java
 init: false
 arch:
@@ -72,7 +72,6 @@ map:
     path: /data
 environment:
   EULA: "TRUE"
-  CF_API_KEY: '$2a$10$jcwamlZWsAk50WAZPS6.9OWBvNBR0gbY9aSNKziHC9fEX3uoOQRXO'
   MODRINTH_MODPACK: prominence-2-fabric
   MODRINTH_LOADER: fabric
   MODRINTH_PROJECTS: "emi"
