@@ -1,6 +1,6 @@
 name: HAMC Server Java
 description: Host a Java Minecraft server on Home Assistant
-version: 1.2.1.12
+version: 1.2.1.12.1
 slug: hamc-java
 init: false
 arch:
@@ -76,4 +76,4 @@ environment:
   MODRINTH_LOADER: fabric
   MODRINTH_PROJECTS: "emi"
   MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
-  JVM_OPTS: "-XX:UseG1GC -XX:UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:DisableExplicitGC -XX:+AlwaysPreTouch"
+  JVM_OPTS: "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:+AlwaysPreTouch"
