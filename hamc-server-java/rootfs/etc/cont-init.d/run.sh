@@ -2,4 +2,4 @@
 
 echo "Starting Minecraft server..."
 
-exec /start
+exec /start "$@"
