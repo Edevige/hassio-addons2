@@ -5,6 +5,8 @@ image: itzg/minecraft-server:java21
 slug: hamc-java
 init: false
 boot: standalone
+startup:
+ -exec /start
 arch:
   - amd64
   - aarch64
