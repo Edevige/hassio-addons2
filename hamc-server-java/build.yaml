@@ -2,7 +2,7 @@
   "build_from":
     {
       "amd64": "itzg/minecraft-server:java21",
-      "aarch64": "itzg/minecraft-servert:java21t",
+      "aarch64": "itzg/minecraft-servert:java21",
       "armv7": "itzg/minecraft-server:java21",
     },
 }
